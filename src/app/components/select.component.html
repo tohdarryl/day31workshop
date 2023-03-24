@@ -1,0 +1,17 @@
+
+
+<table>
+    <tr style="outline: thin solid" *ngFor="let n of items; let idx = index">
+        <td>
+            <img src="assets/fruits/{{n.description}}.png" class="picture">
+        </td>
+        <td>
+            <code>{{n.description}}</code>
+        </td>
+        <td style="padding-right: 50px"></td>
+        <td>
+            <button type="button" (click)="addToCart(n)">Add</button>
+        </td>
+    </tr>
+</table>
+

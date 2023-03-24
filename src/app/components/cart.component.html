@@ -1,0 +1,14 @@
+
+<table>
+    
+    <tr style="outline: thin solid" *ngFor="let i of cart; let idx = index">
+        <td>
+            <img src="assets/fruits/{{i.description}}.png" class="picture">
+        </td>
+        <td><code>{{i.description}}</code></td>
+        <td><code>, quantity: {{i.quantity}}</code></td>
+        <td>
+            <button type="button" (click)="removeItemFromCart(idx)"> Remove </button>
+        </td>
+    </tr>
+</table>
